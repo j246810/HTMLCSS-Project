@@ -49,6 +49,7 @@ footer{
     padding: 20px;
     margin: 50px;
     border: 1px solid #e61919;
+    border-radius: 10px ;
     text-align: center;
     
 }
