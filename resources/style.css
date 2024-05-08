@@ -53,3 +53,9 @@ footer{
     text-align: center;
     
 }
+
+.item-container img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
