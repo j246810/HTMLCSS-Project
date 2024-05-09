@@ -2,9 +2,20 @@
     margin:0;
     padding:0;
 }
+
+.im-fell-english-sc-regular {
+    font-family: "IM Fell English SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 body{
     width:100%;
     height: 100vh;
+    font-family: "IM Fell English SC", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 header{
     display: flex;
