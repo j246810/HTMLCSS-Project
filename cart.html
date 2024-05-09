@@ -4,9 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CART PAGE</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="resources/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    
+    <header>
+        <div class="logo">
+            <image src="resources/images/logo.png" alt="logo"/>
+        </div>
+        <div class ="main-heading">
+            <h1>Shopping Mart</h1>
+            <p>Shop everything at one place</p>
+        </div>
+        <nav class="nav-links">
+            <ol>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./cart.html">Cart</a>
+                </li>
+            </ol>
+        </nav>
+    </header>
+    <main class="cart-main">
+        <div class="cart-items">
+            <div class="cart-item">
+                <div class="cart-item-detail">
+                    <img src="resources/images/chalks.png" alt="chalks"/>
+                    <p>Crayola 48 Pack Washable Sidewalk Chalks</p>
+                </div>
+                <div class="cart-item-price">
+                    <label for="quantity">Quantity</label>
+                    <input id="quantity" name="quantity" type="text" value="1" size="1" readonly/>
+                    <label for="price">Price</label>
+                    <input id="price" name="price" type="text" value="$10" size="1" readonly/>
+                    <button type="button"><i class="fa fa-trash-o"></i></button>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="cart-item-detail">
+                    <img src="resources/images/Painting activity.png" alt="Painting Activity"/>
+                    <p>27 Piece Painting Activity Kit</p>
+                </div>
+                <div class="cart-item-price">
+                    <label for="quantity">Quantity</label>
+                    <input id="quantity" name="quantity" type="text" value="1" size="1" readonly/>
+                    <label for="price">Price</label>
+                    <input id="price" name="price" type="text" value="$10" size="1" readonly/>
+                    <button type="button"><i class="fa fa-trash-o"></i></button>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="cart-item-detail">
+                    <img src="resources/images/Travel activity kit.png" alt="Travel Kit"/>
+                    <p>47 Piece Travel Activity Case Set</p>
+                </div>
+                <div class="cart-item-price">
+                    <label for="quantity">Quantity</label>
+                    <input id="quantity" name="quantity" type="text" value="1" size="1" readonly/>
+                    <label for="price">Price</label>
+                    <input id="price" name="price" type="text" value="$20" size="1" readonly/>
+                    <button type="button"><i class="fa fa-trash-o"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class ="checkout">
+            <div>
+                <label for="price">Total Price</label>
+                <input id="price" name="price" type="text" value="$40" size="1" readonly/>
+            </div>
+            <button type="submit">Proceed to Continue</button>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h5>&copy; Copyrights reserved</h5>
+            <p>Shopping Mart</p>
+        </div>
+    </footer>
 </body>
 </html>
