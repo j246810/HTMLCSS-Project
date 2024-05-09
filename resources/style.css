@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    background-color: white
 }
 
 .im-fell-english-sc-regular {
@@ -21,7 +22,7 @@ header{
     display: flex;
     justify-content: space-between;
     height: 15vh;
-    background-color:white;
+    
     align-items: center;
 
 }
@@ -99,7 +100,7 @@ main{
 footer{
     height:5vh;
     background-color: black;
-    color:antiquewhite;
+    color: black;
     text-align: center;
 }
 
@@ -115,7 +116,7 @@ footer{
     height: auto;
     padding: 20px;
     margin: 50px;
-    border: 1px solid #e61919;
+    border: 1px solid black;
     border-radius: 10px ;
     text-align: center;
     
