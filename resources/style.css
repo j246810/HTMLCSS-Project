@@ -93,7 +93,7 @@ main {
   height: auto;
   object-fit: cover;
   position: absolute;
-  bottom: 50%;
+  bottom: 20%;
   left: 50%;
   transform: translate(-50%);
   z-index: -1;
