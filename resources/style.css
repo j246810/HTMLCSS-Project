@@ -4,6 +4,11 @@
     background-color: white
 }
 
+.price {
+    font-family: serif;
+    font-size: 1.5em;
+}
+
 .im-fell-english-sc-regular {
     font-family: "IM Fell English SC", serif;
     font-weight: 400;
