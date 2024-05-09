@@ -84,6 +84,7 @@ main{
 
 .cart-item-detail img {
     width: 100px;
+    border-radius: 10px;
 }
 .cart-item-detail p{
     margin: 10px;
