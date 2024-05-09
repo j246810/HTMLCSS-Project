@@ -20,6 +20,7 @@ body {
   font-family: "IM Fell English SC", serif;
   font-weight: 400;
   font-style: normal;
+  background-color: #808080;
 }
 header {
   display: flex;
