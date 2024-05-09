@@ -25,9 +25,9 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  height: 15vh;
+  height: 20vh;
   background-color: #808080;
-  align-items: center;
+  
 }
 
 .main-heading h1 {
@@ -38,14 +38,27 @@ header {
   font-size: 1.5rem;
 }
 .logo {
-  padding: 0px;
-  margin: 0px;
-  height: 15vh;
-  padding-right: px;
+  padding: 10px;
+  margin: 10px;
+  /* height: 15vh;
+  padding-right: px; */
+  height: 10vh;
 }
 
 .logo img {
   width: 90px;
+  height: 15vh;
+}
+.nav-links{
+	align-content: center;
+}
+.nav-links a{
+  text-decoration: none;
+  font-size: larger;
+  color: black;
+}
+.nav-links a:hover{
+text-decoration: underline;
 }
 
 .nav-links ol {
@@ -61,9 +74,9 @@ header {
 
 .main-heading {
   text-align: center;
+  align-content: center;
 }
 main {
-  height: 150vh;
   background-color: #808080;
   position: relative;
   z-index: -1;
@@ -125,7 +138,7 @@ main {
 .cart-main {
   position: relative;
   width: 60%;
-  height: 60%;
+  
   margin: auto;
   margin-top: 10%;
   margin-bottom: 10%;
@@ -159,15 +172,16 @@ main {
   display: flex;
   flex-direction: column;
   align-items: end;
-  margin-top: 10px;
+  margin: 10px;
 }
 .checkout button {
-  width: 10vw;
+  margin: 10px 0px;
+  padding: 2px;
 }
 footer {
   height: 5vh;
   background-color: black;
-  color: black;
+  color: white;
   text-align: center;
 }
 
@@ -191,4 +205,22 @@ footer {
   width: 200px;
   height: auto;
   border-radius: 10px;
+}
+@media only screen and (max-width: 500px) {
+  .nav-links ol {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+  }
+  .nav-links ol li {
+      padding: 2px;
+  }
+  .cart-item-detail {
+      display: flex;
+      flex-direction: column;
+    }
+    .cart-main {
+      position: relative;
+      margin: auto;
+    }
 }
