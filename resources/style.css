@@ -150,8 +150,10 @@ main {
 .cart-item {
   display: flex;
   margin-top: 20px;
-  padding-left: 20px;
+  padding: 0.9rem;
   justify-content: space-between;
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
 }
 .cart-item-detail {
   display: flex;
