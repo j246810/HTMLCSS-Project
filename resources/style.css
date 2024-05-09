@@ -135,6 +135,22 @@ main {
   
   opacity: 0.85;
 }
+
+#menuButton {
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  width: 20%;
+  border-radius: 5px;
+  display: block;
+  margin: 20px auto;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  opacity: 0.85;
+
+}
 .cart-main {
   position: relative;
   width: 60%;
