@@ -24,27 +24,39 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  height: 15vh;
+  height: 20vh;
   background-color: #808080;
-  align-items: center;
 }
 
 .logo {
-  padding: 0px;
-  margin: 0px;
-  height: 15vh;
-  padding-right: px;
+  padding: 10px;
+  margin: 10px;
+  /* height: 15vh; */
+  height: 10vh;
+  /* padding-right: px; */
 }
 
 .logo img {
   width: 90px;
+  height: 15vh;
 }
-
+.nav-links{
+    align-content: center;
+}
+.nav-links a{
+    text-decoration: none;
+    font-size: larger;
+    color: black;
+  }
+.nav-links a:hover{
+  text-decoration: underline;
+}
 .nav-links ol {
   list-style: none;
   margin: 5px 10px;
   display: flex;
   justify-content: space-between;
+  
 }
 .nav-links ol li {
   padding: 10px;
@@ -52,9 +64,9 @@ header {
 
 .main-heading {
   text-align: center;
+  align-content: center;
 }
 main {
-  height: 150vh;
   background-color: #808080;
   position: relative;
   z-index: -1;
@@ -92,7 +104,7 @@ main {
   font-size: 24px;
   color: black;
   text-align: left;
-  padding-left: 950px;
+  padding-left: 750px;
   padding-top: 80px;
   line-height: 40px;
 }
@@ -111,7 +123,6 @@ main {
 .cart-main {
   position: relative;
   width: 60%;
-  height: 60%;
   margin: auto;
   margin-top: 10%;
   margin-bottom: 10%;
@@ -137,6 +148,7 @@ main {
 .cart-item-detail p {
   margin: 10px;
 }
+
 .cart-item-price button {
   font-size: 25px;
   margin: 10px;
@@ -144,16 +156,18 @@ main {
 .checkout {
   display: flex;
   flex-direction: column;
-  align-items: end;
-  margin-top: 10px;
+  align-items:end;
+  margin: 10px;
 }
-.checkout button {
-  width: 10vw;
+.checkout button{
+    margin: 10px 0px;
+    padding: 2px;
 }
+
 footer {
   height: 5vh;
   background-color: black;
-  color: black;
+  color: white;
   text-align: center;
 }
 
