@@ -12,12 +12,18 @@ header{
     height: 15vh;
     background-color:white;
     align-items: center;
+
 }
+
 .logo{
     padding: 0px;
     margin:0px;
     height: 15vh;
     padding-right: 5px;
+}
+
+.logo img{
+    width: 90px;
 }
 .nav-links ol{
 list-style: none;
@@ -27,6 +33,11 @@ justify-content: space-between;
 }
 .nav-links ol li{
     padding:10px;
+}
+
+.main-heading {
+    text-align: center;
+
 }
 main{
     height: 150vh;
@@ -53,6 +64,10 @@ main{
 }
 .cart-item-detail{
     display: flex;
+}
+
+.cart-item-detail img {
+    width: 100px;
 }
 .cart-item-detail p{
     margin: 10px;
