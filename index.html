@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Online</title>
     <link rel="stylesheet" href="./resources/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Outfit:wght@100..900&display=swap"
@@ -21,16 +22,24 @@
             <h1>Restaurant Online</h1>
             <p>Welcome</p>
         </div>
+        <div>
         <nav class="nav-links">
             <ol>
                 <li>
-                    <a href="./index.html">Home</a>
+                    <a href="./index.html"><i class="fa fa-home"></i></a>
                 </li>
                 <li>
-                    <a href="./cart.html">Cart</a>
+                    <a href="./wishlist.html"><i class="fa fa-heart"></i></a>
+                </li>
+                <li>
+                    <a href="./cart.html"><i class="fa fa-shopping-cart"></i></a>
                 </li>
             </ol>
         </nav>
+        <div class="currentdatetime">
+            <span id="datetime"></span>
+        </div>
+    </div>
     </header>
     <main>
         <!-- welcome container -->
@@ -56,7 +65,7 @@
         <div class="container">
 
             <!-- item containers which will hold item images and descriptions -->
-            <div id="target11" class="item-container">
+            <!-- <div id="target11" class="item-container">
                 <img src="resources/images/coffeeForest.jpg" alt="coffee ">
                 <h2>Coffee</h2>
                 <p>Exquisite, Fresh coffee</p>
@@ -105,7 +114,7 @@
                     <p>$4.00</p>
                 </div>
                 <button>Add to Cart</button>
-            </div>
+            </div> -->
 
 
 
@@ -118,6 +127,7 @@
             <p>Restaurant Online</p>
         </div>
     </footer>
+    <script src="./resources/scripts/script.js"></script>
 </body>
 
 </html>

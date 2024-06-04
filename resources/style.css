@@ -49,6 +49,9 @@ header {
   width: 90px;
   height: 15vh;
 }
+.currentdatetime{
+  align-content: end;
+}
 .nav-links{
 	align-content: center;
 }
