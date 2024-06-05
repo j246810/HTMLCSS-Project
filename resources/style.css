@@ -27,7 +27,6 @@ header {
   justify-content: space-between;
   height: 20vh;
   background-color: #808080;
-  
 }
 
 .main-heading h1 {
@@ -49,19 +48,19 @@ header {
   width: 90px;
   height: 15vh;
 }
-.currentdatetime{
+.currentdatetime {
   align-content: end;
 }
-.nav-links{
-	align-content: center;
+.nav-links {
+  align-content: center;
 }
-.nav-links a{
+.nav-links a {
   text-decoration: none;
   font-size: larger;
   color: black;
 }
-.nav-links a:hover{
-text-decoration: underline;
+.nav-links a:hover {
+  text-decoration: underline;
 }
 
 .nav-links ol {
@@ -87,7 +86,7 @@ main {
 .welcome {
   margin: 0 auto;
   position: relative;
-  
+
   height: 100vh;
   overflow: hidden;
 }
@@ -103,7 +102,6 @@ main {
   opacity: 0.85;
 }
 .welcome-text {
- 
   position: relative;
   padding: 100px;
   padding-left: 50%;
@@ -113,15 +111,13 @@ main {
   font-weight: bold;
   color: black;
   text-align: center;
-  
 }
 .welcome-text p {
   font-size: 1.5rem;
-  
-  
+
   color: black;
   text-align: right;
- 
+
   line-height: 1.6;
 }
 
@@ -139,12 +135,11 @@ main {
   padding: 2%;
   opacity: 0.85;
   z-index: 10;
-
 }
 .cart-main {
   position: relative;
   width: 60%;
-  
+
   margin: auto;
   margin-top: 10%;
   margin-bottom: 10%;
@@ -209,6 +204,50 @@ footer {
   text-align: center;
 }
 
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-container h1 {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wishlist-container {
+  width: 900px;
+  height: auto;
+  padding: 20px;
+  margin: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wishlist-container img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.wishlist-container button {
+  height: 90px;
+  width: 90px;
+  align-self: center;
+  background-color: black;
+  color: white;
+}
+
+.desc-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
 .item-container img {
   width: 200px;
   height: auto;
@@ -216,19 +255,19 @@ footer {
 }
 @media only screen and (max-width: 500px) {
   .nav-links ol {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
   }
   .nav-links ol li {
-      padding: 2px;
+    padding: 2px;
   }
   .cart-item-detail {
-      display: flex;
-      flex-direction: column;
-    }
-    .cart-main {
-      position: relative;
-      margin: auto;
-    }
+    display: flex;
+    flex-direction: column;
+  }
+  .cart-main {
+    position: relative;
+    margin: auto;
+  }
 }
