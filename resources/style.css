@@ -258,6 +258,11 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+
+.info-container{
+  text-align: center;
+}
+
 @media only screen and (max-width: 500px) {
   .nav-links ol {
     list-style: none;

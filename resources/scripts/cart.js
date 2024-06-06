@@ -1,6 +1,6 @@
 //Get the current time and date
 const now = new Date();
-document.getElementById("datetime").innerHTML = now;
+document.getElementById("datetime").innerHTML = now.toLocaleString();
 
 //Retrieve cart items from local storage
 let savedCartItems = localStorage.getItem("cartItems");

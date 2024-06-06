@@ -1,6 +1,6 @@
 //Get the current time and date
 const now = new Date();
-document.getElementById("datetime").innerHTML = now;
+document.getElementById("datetime").innerHTML = now.toLocaleString();
 
 
 //Fetching container to add products
