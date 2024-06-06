@@ -80,8 +80,13 @@ header {
 }
 main {
   background-color: #808080;
-  position: relative;
-  z-index: -1;
+  /* position: relative;
+  z-index: -1;  */
+}
+.main-index{
+    background-color: #808080;
+    position: relative;
+    z-index: -1; 
 }
 .welcome {
   margin: 0 auto;
