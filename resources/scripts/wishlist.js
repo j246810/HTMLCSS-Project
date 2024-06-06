@@ -1,3 +1,7 @@
+//Get the current time and date
+const now = new Date();
+document.getElementById("datetime").innerHTML = now.toLocaleString();
+
 const mainContainer = document.querySelector(".main-container");
 const wishlistItems = [
   {
