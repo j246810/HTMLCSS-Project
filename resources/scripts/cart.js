@@ -72,6 +72,7 @@ function deleteCartItem(event) {
         if (element.productId === productId) {
             cartItems.splice(i, 1)
             console.log(`Updated cart items ${cartItems}`);
+            localStorage.setItem("cartItems", JSON.stringify(cartItems));
             updateCart(cartItems);
         }
     }

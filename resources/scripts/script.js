@@ -17,17 +17,19 @@ const products = [
 products.map(product => {
     let newHtml = `
     <div class="item-container">
-    <img src = ${product.image}>
+        <img src = ${product.image}>
         <h2>${product.title}</h2>
         <p> ${product.description}</p>
         <div class="price">
         <p> ${product.price}</p>   
         </div> 
         <button class = "addcart" data-id ="${product.productId}">Add to Cart</button>
-        
+        <i class="fa fa-heart" key="${product.productId}"></i>
     </div>
 `
-    container.innerHTML += newHtml;
+if (container) {    
+        container.innerHTML += newHtml;
+    }
 })
 
 //Cart items
@@ -80,7 +82,7 @@ function selectedItem(productId, quantity) {
     //Loop throught products to find the current selected product by id and fill cart item with product details
     products.forEach(element => {
         if (element.productId == productId) {
-            addedProduct = 
+            addedProduct =
             {
                 productId: productId,
                 image: element.image,
@@ -93,6 +95,61 @@ function selectedItem(productId, quantity) {
 
     });
     return addedProduct;
-
 }
+
+const mainContainer = document.querySelector(".main-container");
+const wishlistItemsInStore = JSON.parse(localStorage.getItem("wishlistItems"));
+const wishlistItems = [];
+let wishlistItemsForRender = wishlistItems.concat(wishlistItemsInStore).filter((item) => item !== null);
+console.log(wishlistItemsForRender);
+if (wishlistItemsForRender?.length > 0) {
+    wishlistItemsForRender.forEach((item) => {
+        if (item) {
+            const wishItem = `
+            <div class="wishlist-container" key=${item.productId}>
+              <img src = ${item.image}>
+              <div class="desc-container">
+                <h2>${item.title}</h2>
+                <p> ${item.description}</p>
+                <div class="price"> 
+                  <p> ${item.price}</p>   
+                </div>
+              </div> 
+              <button>Remove</button>
+            </div>
+          `;
+            if (mainContainer) {
+                mainContainer.innerHTML += wishItem;
+            }
+        }
+    });
+} else {
+    if (mainContainer) {
+        mainContainer.innerHTML += "<h2>Wishlist is empty</h2>";
+    }
+}
+
+const wishlistBtns = document.querySelectorAll(".wishlist-container button");
+wishlistBtns.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+        e.target.parentElement.remove();
+        const wistlistItemId = e.target.parentElement.getAttribute("key");
+        wishlistItemsForRender = wishlistItemsForRender.filter((item) => item !== null)
+        const updatedWishlistItems = wishlistItemsForRender.filter((item) => item.productId !== +wistlistItemId);
+        localStorage.setItem("wishlistItems", JSON.stringify(updatedWishlistItems));
+    });
+});
+
+const wishlistIcons = document.querySelectorAll(".fa-heart");
+wishlistIcons.forEach((i) => {
+    i.addEventListener("click", (e) => {
+        const productId = e.target.getAttribute("key");
+        const itemAddToWishlist = products.find((product) => product.productId === +productId);
+        wishlistItems.push(itemAddToWishlist);
+        localStorage.setItem("wishlistItems", JSON.stringify(wishlistItems));
+    });
+});
+
+
+
 

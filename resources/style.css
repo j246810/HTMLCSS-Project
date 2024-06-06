@@ -22,6 +22,7 @@ body {
   font-style: normal;
   background-color: #808080;
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -36,6 +37,7 @@ header {
 .main-heading p {
   font-size: 1.5rem;
 }
+
 .logo {
   padding: 10px;
   margin: 10px;
@@ -48,17 +50,21 @@ header {
   width: 90px;
   height: 15vh;
 }
+
 .currentdatetime {
   align-content: end;
 }
+
 .nav-links {
   align-content: center;
 }
+
 .nav-links a {
   text-decoration: none;
   font-size: larger;
   color: black;
 }
+
 .nav-links a:hover {
   text-decoration: underline;
 }
@@ -69,6 +75,7 @@ header {
   display: flex;
   justify-content: space-between;
 }
+
 .nav-links ol li {
   padding: 10px;
   font-size: 2rem;
@@ -78,16 +85,19 @@ header {
   text-align: center;
   align-content: center;
 }
+
 main {
   background-color: #808080;
   /* position: relative;
   z-index: -1;  */
 }
-.main-index{
-    background-color: #808080;
-    position: relative;
-    z-index: -1; 
+
+.main-index {
+  background-color: #808080;
+  position: relative;
+  z-index: -1;
 }
+
 .welcome {
   margin: 0 auto;
   position: relative;
@@ -95,6 +105,7 @@ main {
   height: 100vh;
   overflow: hidden;
 }
+
 .background {
   width: 100vw;
   height: auto;
@@ -106,17 +117,20 @@ main {
   z-index: -1;
   opacity: 0.85;
 }
+
 .welcome-text {
   position: relative;
   padding: 100px;
   padding-left: 50%;
 }
+
 .welcome-text h1 {
   font-size: 3rem;
   font-weight: bold;
   color: black;
   text-align: center;
 }
+
 .welcome-text p {
   font-size: 1.5rem;
 
@@ -141,6 +155,7 @@ main {
   opacity: 0.85;
   z-index: 10;
 }
+
 .cart-main {
   position: relative;
   width: 60%;
@@ -149,10 +164,12 @@ main {
   margin-top: 10%;
   margin-bottom: 10%;
 }
+
 .cart-items {
   display: flex;
   flex-direction: column;
 }
+
 .cart-item {
   display: flex;
   margin-top: 20px;
@@ -161,6 +178,7 @@ main {
   border: 0.1rem solid black;
   border-radius: 0.5rem;
 }
+
 .cart-item-detail {
   display: flex;
 }
@@ -169,23 +187,28 @@ main {
   width: 100px;
   border-radius: 10px;
 }
+
 .cart-item-detail p {
   margin: 10px;
 }
+
 .cart-item-price button {
   font-size: 25px;
   margin: 10px;
 }
+
 .checkout {
   display: flex;
   flex-direction: column;
   align-items: end;
   margin: 10px;
 }
+
 .checkout button {
   margin: 10px 0px;
   padding: 2px;
 }
+
 footer {
   height: 5vh;
   background-color: black;
@@ -207,6 +230,7 @@ footer {
   border: 1px solid black;
   border-radius: 10px;
   text-align: center;
+  position: relative;
 }
 
 .main-container {
@@ -245,6 +269,10 @@ footer {
   color: white;
 }
 
+.wishlist-container button:hover {
+  cursor: pointer;
+}
+
 .desc-container {
   align-items: center;
   display: flex;
@@ -259,7 +287,18 @@ footer {
   border-radius: 10px;
 }
 
-.info-container{
+.item-container i {
+  color: red;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.item-container i:hover {
+  cursor: pointer;
+}
+
+.info-container {
   text-align: center;
 }
 
@@ -269,13 +308,16 @@ footer {
     display: flex;
     flex-direction: column;
   }
+
   .nav-links ol li {
     padding: 2px;
   }
+
   .cart-item-detail {
     display: flex;
     flex-direction: column;
   }
+
   .cart-main {
     position: relative;
     margin: auto;
